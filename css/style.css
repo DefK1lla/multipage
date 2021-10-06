@@ -1702,6 +1702,10 @@ a{
     font-weight: 700;
 }
 
+.program__result{
+    padding: 0 30px;
+}
+
 .program__result-title{
     font-weight: 700;
 

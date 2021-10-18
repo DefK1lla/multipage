@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Timer
-  let lastDate = new Date("Oct 14 2021 00:00:00");
+  let lastDate = new Date("Oct 14 2025 00:00:00");
 
   let now = new Date(),
     leftUntil = lastDate - now;

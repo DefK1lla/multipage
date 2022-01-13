@@ -6,19 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   moduleHeads.forEach(function (moduleHeadsItem) {
     moduleHeadsItem.addEventListener('click', () => {
-      if (moduleHeadsItem.classList.contains('marathon__module-head--active')) {
-        moduleHeadsItem.classList.remove('marathon__module-head--active');
-      } else {
-        moduleHeadsItem.classList.add('marathon__module-head--active');
-      }
+      moduleHeadsItem.classList.toggle('marathon__module-head--active');
+      
       moduleItem = moduleHeadsItem.closest('.marathon__module-item');
       moduleBody = moduleItem.querySelector('.marathon__module-body');
-
-      if (moduleBody.classList.contains('marathon__module-body--active')) {
-        moduleBody.classList.remove('marathon__module-body--active');
-      } else {
-        moduleBody.classList.add('marathon__module-body--active');
-      }
+      
+      moduleBody.classList.toggle('marathon__module-body--active');
+     
     });
   });
 
